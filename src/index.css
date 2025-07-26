@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a202c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-secondary to-accent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-md font-semibold transition-all duration-300 ease-in-out;
+}
+
+.btn-primary {
+  @apply bg-secondary text-primary hover:bg-accent hover:shadow-lg transform hover:-translate-y-1;
+}
+
+.btn-secondary {
+  @apply bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary;
+}
